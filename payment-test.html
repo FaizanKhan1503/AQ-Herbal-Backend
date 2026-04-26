@@ -20,12 +20,12 @@ async function pay() {
       },
       body: JSON.stringify({
         orderId: "69ec56233a9627940fc56fc3",
-        method: "card"
+        method: "card",
       })
     });
 
     const result = await res.json();
-  // console.log("INIT RESPONSE:", result);
+  
     console.log("FULL RESPONSE:", result);
 
     const data = result.data;

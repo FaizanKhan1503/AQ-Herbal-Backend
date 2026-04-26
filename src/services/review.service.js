@@ -43,7 +43,7 @@ export const ReviewService = {
       comment: data.comment ?? data.content,
       media: data.media || [],
       isVerified,
-      status: 'pending' // Requires admin approval
+      status: 'pending' // Requires admin approval,
     });
 
     return review;

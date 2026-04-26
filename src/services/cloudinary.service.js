@@ -4,7 +4,7 @@ import { config } from '../config/config.js';
 cloudinary.config({
   cloud_name: config.cloudinary.name,
   api_key: config.cloudinary.apiKey,
-  api_secret: config.cloudinary.apiSecret
+  api_secret: config.cloudinary.apiSecret,
 });
 
 export const uploadImage = async (filePath, folder = 'products') => {

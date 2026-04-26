@@ -8,7 +8,7 @@ export const ProductService = {
     const { page, limit, skip } = parsePagination(query);
     const sort = parseSort(query);
     const [items, total] = await Promise.all([
-      ProductRepository.findLean(filter, { skip, limit, sort }),
+      ProductRepository.findLean(filter, {skip, limit, sort}),
       ProductRepository.count(filter)
     ]);
     return { items, page, limit, total };

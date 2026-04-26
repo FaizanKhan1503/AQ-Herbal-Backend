@@ -12,7 +12,7 @@ const cartSchema = new mongoose.Schema({
   tax: { type: Number, default: 0, min: 0 },
   total: { type: Number, default: 0, min: 0 },
   isDeleted: { type: Boolean, default: false },
-  deletedAt: { type: Date }
+  deletedAt: { type: Date },
 }, { timestamps: true });
 
 cartSchema.index({ userId: 1, isDeleted: 1 });
