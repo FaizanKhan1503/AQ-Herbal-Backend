@@ -3,5 +3,5 @@ export const PAYMENT_STATUS = {
   AUTHORIZED: 'authorized',
   CAPTURED: 'captured',
   FAILED: 'failed',
-  REFUNDED: 'refunded'
+  REFUNDED: 'refunded',
 };

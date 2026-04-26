@@ -7,7 +7,7 @@ export const SHIPMENT_STATUS = {
   DELIVERED: 'delivered',
   FAILED: 'failed',
   RETURNED: 'returned',
-  CANCELLED: 'cancelled',
+  CANCELLED: 'cancelled'
 };
 
 export const COURIER_PROVIDERS = {
