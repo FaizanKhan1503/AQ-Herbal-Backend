@@ -3,7 +3,7 @@ import { parsePagination, parseSort } from '../utils/pagination.js';
 
 export const CategoryService = {
   async list(query) {
-    const filter = { isDeleted: false };
+    const filter = {isDeleted: false};
     const { page, limit, skip } = parsePagination(query);
     const sort = parseSort(query);
     const [items, total] = await Promise.all([
